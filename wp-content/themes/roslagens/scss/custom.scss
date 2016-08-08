@@ -1,0 +1,377 @@
+$maincolor: #B11716;
+$secondarycolor: #524A42;
+$fontH: "ff-dax-web-pro";
+$fontP:"ff-dax-web-pro";
+
+
+html,body{
+	position:relative;
+	height:100%;
+}
+
+
+body{
+	font-family:$fontP;
+	background: #eee;
+    -webkit-font-smoothing: antialiased;
+}
+
+.clearfix{
+	clear:both;
+}
+
+
+
+.btn-white{
+	background-color:white;
+	color:black;
+	padding:15px 25px;
+	text-decoration:none;
+	margin-top:50px;
+	font-size:19px;
+	display:inline-block;
+}
+
+
+/*HEADER*/
+
+#page-header{
+
+
+	#page-logo{
+
+		margin: 0px;
+		margin-right: 50px;
+	}
+
+	position:fixed;
+	width:100%;
+	z-index:999;
+
+	h1{
+		float: left;
+
+
+	}
+
+	ul{
+
+		li{
+
+
+			padding:1em 1em;
+
+
+			a{
+
+				color: $secondarycolor;
+				font-weight: 600;
+				font-size: 18px;
+
+			}
+		}
+	}
+
+
+	} 
+
+
+	#page-container{
+
+		#homebanner{
+			height: 750px;
+			padding: 200px 0px;
+			background-size:cover;
+			background-position: 70% 50%;
+			position:relative;
+			overflow: hidden;
+
+			p{
+				color: white;
+				width: 90%;
+				text-align: left;
+				font-size: 30px;
+			}
+
+			.slider-title{
+				font-weight: 900;
+				font-size: 80px;
+				line-height: 75px;
+				color: white;
+				margin-top: 50px;
+				margin-bottom:20px; 
+				text-align: left;
+				    text-shadow: 3px 3px 4px $secondarycolor;
+			}
+
+
+
+
+.swiper-container {
+       width: 100%;
+        height: 800px;
+        position:initial;
+
+
+
+.parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+.swiper-text {
+    width: 80%;
+    float: left;
+    display: none;
+}
+
+img{
+	float:right;
+	max-width:40%;
+	height:auto;
+	max-height: 550px;
+	-vendor-animation-duration: 3s;
+}
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: block;
+      
+    }
+
+
+    .swiper-pagination-bullet{
+    	background-color:white;
+    	opacity: 0.8;
+    }
+
+
+    .swiper-pagination-bullet-active{
+    	background-color:$maincolor;
+    }
+
+
+    .swiper-button-prev{
+    	position:absolute;
+    	left: 0px;
+    	background-color:white;
+    	background-size: 20px 44px;
+    	padding:10px 20px;
+    }
+
+
+    .swiper-button-next{
+    	position:absolute;
+    	right: 0px;
+    	background-color:white;
+    	background-size: 20px 44px;
+    	padding:10px 20px;
+    }
+
+
+
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets{
+
+    	position:absolute;
+    	bottom:50px;
+
+    }
+
+
+    .swiper-pagination-bullet{
+    	height: 15px;
+    	width: 15px;
+    } 
+}
+
+}
+
+//BANNER END//
+
+//PAGE CONTENT BEGIN//
+
+
+
+.container.page-content{
+	margin-top:50px;
+}
+
+
+
+
+.article-section.text{
+	font-size:1.2em;
+	line-height:1.6;
+
+}
+
+.article-section{
+	//margin:40px 0px;
+
+
+	padding: 40px 0px;
+
+
+
+
+
+	.border-wrap{
+		p{
+			
+			font-size: 1.3em;
+		}
+	}
+
+
+
+	.smarthlp{
+		margin:30px 0px;
+	}
+}
+
+
+.title{
+	font-weight:900;
+	margin: 5px 0 10px;
+	font-size: 48px;
+	color:$maincolor;
+}
+
+.small-title{
+	font-weight:600;
+	font-size: 30px;
+	position:relative;
+	margin: 5px 0 10px;
+	padding: 12px 0;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.border-wrap{
+
+	background-color:white;
+	border: 1px solid rgba(210, 210, 210, 0.83);
+	padding: 19px;
+
+}
+
+.sidebar-fp{
+
+
+.sidebar-title{
+	color:white;
+	background-color:$maincolor;
+	text-align:center;
+	margin-bottom:0px;
+	font-size:25px;
+	padding:5px 0px;
+}
+
+.news-item{
+
+	margin-bottom:30px;
+
+	border-bottom: 1px solid rgba(210, 210, 210, 0.83);
+
+	.news-title{
+		font-weight: 700;
+		color: black;
+		text-align: left;
+		margin-bottom: 15px;
+		padding-bottom:5px;
+		position:relative;
+		border-bottom: 1px solid #e3e3e3;
+		line-height: 35px;
+
+	
+	}
+
+		.news-title:after{
+		    content: "";
+		    position: absolute;
+		    top: 0px;
+		    bottom:0px;
+		    left: -20px;
+		    width: 2px;
+		    background-color: #005A9A;
+			background-color:$maincolor;
+		}
+
+	img{
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+
+	p{
+		margin:15px 0px;
+
+	}
+}
+
+
+}
+
+.buildwrap{
+
+	background-color:white;
+	border: 1px solid rgba(210, 210, 210, 0.83);
+	padding:40px;
+
+	img{
+		display: block;
+		margin:auto;
+		width: 95%;
+	}
+
+	h2{
+		margin-bottom:20px;
+	}
+
+}
+
+}
+
+//PAGE CONTENT END//
+
+//Single page styles//
+
+.single-page-wrap{
+	padding:120px 0px;
+
+	.sortiment-item{
+
+		img{
+			max-width: 100%;
+
+			max-height: 300px;
+			display: block;
+			margin:auto;
+
+
+		}
+
+		.sortiment-title{
+			color: $maincolor;
+			font-weight: 800;
+			font-size: 25px;
+		}
+	}
+}
+
+
+//FOOTER START//
+#page-footer{
+	width:100%;
+	margin-top:40px;
+	background-color:$secondarycolor;
+	color:white;
+}

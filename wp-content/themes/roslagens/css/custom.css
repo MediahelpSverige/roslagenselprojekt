@@ -1,0 +1,245 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: "ff-dax-web-pro";
+  background: #eee;
+  -webkit-font-smoothing: antialiased;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+  padding: 15px 25px;
+  text-decoration: none;
+  margin-top: 50px;
+  font-size: 19px;
+  display: inline-block;
+}
+
+/*HEADER*/
+#page-header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+#page-header #page-logo {
+  margin: 0px;
+  margin-right: 50px;
+}
+#page-header h1 {
+  float: left;
+}
+#page-header ul li {
+  padding: 1em 1em;
+}
+#page-header ul li a {
+  color: #524A42;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#page-container #homebanner {
+  height: 750px;
+  padding: 200px 0px;
+  background-size: cover;
+  background-position: 70% 50%;
+  position: relative;
+  overflow: hidden;
+}
+#page-container #homebanner p {
+  color: white;
+  width: 90%;
+  text-align: left;
+  font-size: 30px;
+}
+#page-container #homebanner .slider-title {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 75px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: left;
+  text-shadow: 3px 3px 4px #524A42;
+}
+#page-container #homebanner .swiper-container {
+  width: 100%;
+  height: 800px;
+  position: initial;
+}
+#page-container #homebanner .swiper-container .parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+#page-container #homebanner .swiper-container .swiper-text {
+  width: 80%;
+  float: left;
+  display: none;
+}
+#page-container #homebanner .swiper-container img {
+  float: right;
+  max-width: 40%;
+  height: auto;
+  max-height: 550px;
+  -vendor-animation-duration: 3s;
+}
+#page-container #homebanner .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: block;
+}
+#page-container #homebanner .swiper-container .swiper-pagination-bullet {
+  background-color: white;
+  opacity: 0.8;
+}
+#page-container #homebanner .swiper-container .swiper-pagination-bullet-active {
+  background-color: #B11716;
+}
+#page-container #homebanner .swiper-container .swiper-button-prev {
+  position: absolute;
+  left: 0px;
+  background-color: white;
+  background-size: 20px 44px;
+  padding: 10px 20px;
+}
+#page-container #homebanner .swiper-container .swiper-button-next {
+  position: absolute;
+  right: 0px;
+  background-color: white;
+  background-size: 20px 44px;
+  padding: 10px 20px;
+}
+#page-container #homebanner .swiper-container .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+  position: absolute;
+  bottom: 50px;
+}
+#page-container #homebanner .swiper-container .swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+}
+#page-container .container.page-content {
+  margin-top: 50px;
+}
+#page-container .article-section.text {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+#page-container .article-section {
+  padding: 40px 0px;
+}
+#page-container .article-section .border-wrap p {
+  font-size: 1.3em;
+}
+#page-container .article-section .smarthlp {
+  margin: 30px 0px;
+}
+#page-container .title {
+  font-weight: 900;
+  margin: 5px 0 10px;
+  font-size: 48px;
+  color: #B11716;
+}
+#page-container .small-title {
+  font-weight: 600;
+  font-size: 30px;
+  position: relative;
+  margin: 5px 0 10px;
+  padding: 12px 0;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+}
+#page-container .border-wrap {
+  background-color: white;
+  border: 1px solid rgba(210, 210, 210, 0.83);
+  padding: 19px;
+}
+#page-container .sidebar-fp .sidebar-title {
+  color: white;
+  background-color: #B11716;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 25px;
+  padding: 5px 0px;
+}
+#page-container .sidebar-fp .news-item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(210, 210, 210, 0.83);
+}
+#page-container .sidebar-fp .news-item .news-title {
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  position: relative;
+  border-bottom: 1px solid #e3e3e3;
+  line-height: 35px;
+}
+#page-container .sidebar-fp .news-item .news-title:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -20px;
+  width: 2px;
+  background-color: #005A9A;
+  background-color: #B11716;
+}
+#page-container .sidebar-fp .news-item img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+#page-container .sidebar-fp .news-item p {
+  margin: 15px 0px;
+}
+#page-container .buildwrap {
+  background-color: white;
+  border: 1px solid rgba(210, 210, 210, 0.83);
+  padding: 40px;
+}
+#page-container .buildwrap img {
+  display: block;
+  margin: auto;
+  width: 95%;
+}
+#page-container .buildwrap h2 {
+  margin-bottom: 20px;
+}
+
+.single-page-wrap {
+  padding: 120px 0px;
+}
+.single-page-wrap .sortiment-item img {
+  max-width: 100%;
+  max-height: 300px;
+  display: block;
+  margin: auto;
+}
+.single-page-wrap .sortiment-item .sortiment-title {
+  color: #B11716;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+#page-footer {
+  width: 100%;
+  margin-top: 40px;
+  background-color: #524A42;
+  color: white;
+}
+
+/*# sourceMappingURL=custom.css.map */
