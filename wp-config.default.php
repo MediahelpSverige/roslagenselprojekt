@@ -79,5 +79,3 @@ define('WPLANG', '');
  * Increase memory limit. 
  */
 define('WP_MEMORY_LIMIT', '64M');
-
-echo "default";
