@@ -29,7 +29,7 @@ switch ($hostname) {
         define('WP_ENV', 'development');
         break;
     
-    case 'http://roslagenselprojekt.mediahelpcrm.se/':
+    case 'roslagenselprojekt.mediahelpcrm.se':
         define('WP_ENV', 'staging');
         break;
 
