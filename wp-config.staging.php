@@ -34,6 +34,8 @@ if (!defined('DB_COLLATE')) {
 	define('DB_COLLATE', '');
 }
 
+$table_prefix  = 'wp_';
+
 
 define('WP_HOME','http://roslagenselprojekt.mediahelpcrm.se/');
 define('WP_SITEURL', 'http://roslagenselprojekt.mediahelpcrm.se/');
