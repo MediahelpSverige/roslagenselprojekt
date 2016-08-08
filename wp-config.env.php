@@ -24,8 +24,9 @@
  *   case 'localhost':
  *
  */
+echo $hostname;
 switch ($hostname) {
-    case 'http://localhost:8080/roslagenselprojekt.se/':
+    case 'localhost:8080':
         define('WP_ENV', 'development');
         break;
     

@@ -35,3 +35,5 @@ define('WP_SITEURL','http://localhost:8080/roslagenselprojekt.se/');
  * in their development environments.
  */
 define('WP_DEBUG', true);
+
+echo "dev";

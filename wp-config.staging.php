@@ -25,8 +25,8 @@ define('DB_PASSWORD', 'steel1992');
 define('DB_HOST', 'localhost');
 
 
-define('WP_HOME','http://localhost:8080/roslagenselprojekt.se/');
-define('WP_SITEURL','http://localhost:8080/roslagenselprojekt.se/');
+define('WP_HOME','http://roslagenselprojekt.mediahelpcrm.se/');
+define('http://roslagenselprojekt.mediahelpcrm.se/');
 
 /**
  * For developers: WordPress debugging mode.
