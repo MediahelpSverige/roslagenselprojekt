@@ -26,7 +26,7 @@ define('DB_HOST', 'localhost');
 
 
 define('WP_HOME','http://roslagenselprojekt.mediahelpcrm.se/');
-define('http://roslagenselprojekt.mediahelpcrm.se/');
+define('WP_SITEURL', 'http://roslagenselprojekt.mediahelpcrm.se/');
 
 /**
  * For developers: WordPress debugging mode.
