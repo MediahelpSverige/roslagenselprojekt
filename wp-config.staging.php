@@ -16,7 +16,7 @@
 define('DB_NAME', 'roslagens');
 
 /** MySQL database username */
-define('DB_USER', '700245ddf4af@localhost');
+define('DB_USER', '700245ddf4af');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'steel1992');
