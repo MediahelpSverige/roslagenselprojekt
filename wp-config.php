@@ -49,6 +49,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Try environment variable 'WP_ENV'
+
 if (getenv('WP_ENV') !== false) {
     // Filter non-alphabetical characters for security
     define('WP_ENV', preg_replace('/[^a-z]/', '', getenv('WP_ENV')));
@@ -89,7 +90,8 @@ if ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
 }
 
 // Load default config
-include ABSPATH . '/wp-config.default.php';
+//include ABSPATH . '/wp-config.default.php';
+
 
 // Load config file for current environment
 include ABSPATH . '/wp-config.' . WP_ENV . '.php';
@@ -107,9 +109,6 @@ if (defined('WP_CACHE')) {
     define('COOKIE_DOMAIN', $hostname);
 }
 
-echo DB_NAME;
-echo DB_HOST;
-echo DB_PASSWORD;
 
 // Clean up
 unset($hostname, $protocol);
