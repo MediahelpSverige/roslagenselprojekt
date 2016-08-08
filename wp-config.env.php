@@ -27,10 +27,12 @@
 switch ($hostname) {
     case 'localhost:8080':
         define('WP_ENV', 'development');
+        echo "dev";
         break;
     
     case 'roslagenselprojekt.mediahelpcrm.se':
         define('WP_ENV', 'staging');
+        echo "staging";
         break;
 
     case 'www.domain.com':

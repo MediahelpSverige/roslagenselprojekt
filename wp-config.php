@@ -107,6 +107,10 @@ if (defined('WP_CACHE')) {
     define('COOKIE_DOMAIN', $hostname);
 }
 
+echo DB_NAME;
+echo DB_HOST;
+echo DB_PASSWORD;
+
 // Clean up
 unset($hostname, $protocol);
 
