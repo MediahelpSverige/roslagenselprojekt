@@ -32,6 +32,15 @@
 				'container'      => 'nav',
 				'container_id'   => 'primary-nav'
 			)) ?>
+
+						<div class="" id="local">
+			<div class="search-wrap">
+			<i class="fa fa-search" aria-hidden="true"></i>
+			<?php get_search_form();?>
+			</div>
+			</div>
+
+			
 			<div class="clearfix"></div>
 			</div>
 		</header>

@@ -13,6 +13,32 @@ body {
   clear: both;
 }
 
+.search-wrap {
+  float: right;
+  margin-right: 20px;
+}
+.search-wrap .searchbar {
+  position: absolute;
+  left: 0px;
+  right: -60px;
+  top: 80px;
+  display: none;
+}
+.search-wrap .searchbar input {
+  font-size: 70px;
+  padding: 5px 10px;
+  font-family: 'montserrat';
+  width: 100%;
+  height: 100vh;
+  display: block;
+  float: left;
+  border: none;
+  text-align: center;
+}
+.search-wrap .searchbar input:focus {
+  outline: none;
+}
+
 .btn-white {
   background-color: white;
   color: black;
@@ -25,9 +51,24 @@ body {
 
 /*HEADER*/
 #page-header {
+  top: 0px;
   position: fixed;
   width: 100%;
   z-index: 999;
+}
+#page-header .fa-search {
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  /* margin-right: 20px; */
+  float: right;
+  right: 20px;
+  line-height: 5rem;
+  top: 5px;
+  /* bottom: 0px; */
+  margin: auto;
+  display: block;
 }
 #page-header #page-logo {
   margin: 0px;
@@ -165,6 +206,7 @@ body {
   background-color: white;
   border: 1px solid rgba(210, 210, 210, 0.83);
   padding: 19px;
+  margin-bottom: 30px;
 }
 #page-container .sidebar-fp .sidebar-title {
   color: white;

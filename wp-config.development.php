@@ -24,8 +24,20 @@ define('DB_PASSWORD', '');
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
+/** Database Charset to use in creating database tables. */
+if (!defined('DB_CHARSET')) {
+	define('DB_CHARSET', 'utf8');
+}
+
+/** The Database Collate type. Don't change this if in doubt. */
+if (!defined('DB_COLLATE')) {
+	define('DB_COLLATE', '');
+}
+
 define('WP_HOME','http://localhost:8080/roslagenselprojekt.se/');
 define('WP_SITEURL','http://localhost:8080/roslagenselprojekt.se/');
+
+$table_prefix  = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.

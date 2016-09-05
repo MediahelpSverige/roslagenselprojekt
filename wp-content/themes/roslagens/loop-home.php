@@ -13,13 +13,7 @@
 						</div>
 						<!--<img class="animated" src="<?php bloginfo('url')?>/wp-content/uploads/2016/05/Fr-Canon-007.png">-->
 					</div>
-					<div class="swiper-slide">
-						<div class="swiper-text animated">
-							<h1 class="slider-title">Vi är en del av:</h1>
-							<img src="<?php bloginfo('url')?>/wp-content/uploads/2016/05/logo-roslag-ok-1.png">
-						</div>
-						<!--<img class="animated" src="<?php bloginfo('url')?>/wp-content/uploads/2016/05/Fr-Canon-006.png">-->
-					</div>
+
 					<div class="swiper-slide">
 						<div class="swiper-text animated"><h1 class="slider-title animated">Ring RoslagsJouren</h1>
 							<p>

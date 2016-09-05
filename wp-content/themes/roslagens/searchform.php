@@ -1,9 +1,14 @@
-<form action="<?php bloginfo('siteurl'); ?>" class="search-form">
-    <div class="input-wrap search">
-        <label for="input-s" class="screen-reader-text">Search for:</label>
-        <input type="search" id="input-s" name="s" />
+<form role="search" method="get" id="searchform"
+
+    class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+
+    <div class="searchbar">
+
+        <input type="text" value="<?php echo get_search_query(); ?>" placeholder="Sök på sidan" name="s" id="s" />
+
+
+            
+
     </div>
-    <div class="input-wrap submit">
-        <input type="submit" value="Search" class="button" />
-	</div>
+
 </form>

@@ -16,6 +16,12 @@
 		 	$(document).ready(function(){
 
 
+		 						$('.fa-search').click(function(){
+					console.log('klick');
+					$('.searchbar').slideToggle();
+				})
+
+
 
 		 			$.fn.extend({
     animateCss: function (animationName) {

@@ -21,6 +21,41 @@ body{
 }
 
 
+	.search-wrap{
+		float: right;
+		
+		margin-right: 20px;
+
+		.searchbar{
+position: absolute;
+    left: 0px;
+    right: -60px;
+    top: 80px;
+			display: none;
+
+			input{
+
+	font-size: 70px;
+    padding: 5px 10px;
+    font-family: 'montserrat';
+
+    width: 100%;
+    height: 100vh;
+    display: block;
+    float: left;
+    border: none;
+    text-align:center;
+
+    &:focus{
+    	outline: none;
+    }
+
+			}
+
+		}
+	}
+
+
 
 .btn-white{
 	background-color:white;
@@ -36,6 +71,25 @@ body{
 /*HEADER*/
 
 #page-header{
+
+	top:0px;
+
+
+
+	.fa-search {
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  /* margin-right: 20px; */
+  float: right;
+  right: 20px;
+  line-height: 5rem;
+  top: 5px;
+  /* bottom: 0px; */
+  margin: auto;
+  display: block;
+}
 
 
 	#page-logo{
@@ -77,6 +131,7 @@ body{
 
 
 	#page-container{
+
 
 		#homebanner{
 			height: 750px;
@@ -260,6 +315,7 @@ img{
 	background-color:white;
 	border: 1px solid rgba(210, 210, 210, 0.83);
 	padding: 19px;
+	margin-bottom:30px;
 
 }
 

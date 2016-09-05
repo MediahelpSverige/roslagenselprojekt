@@ -98,3 +98,25 @@ $args = array(
 register_post_type( 'sortiment', $args );
 }
 add_action( 'init', 'offer_custom_init' );
+
+function ref_custom_init() {
+$args = array(
+'public' => true,
+'label'  => 'Referenser',
+'description'        => __( 'Description.', 'landqvist' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'referens' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+				'taxonomies'		 => array('category'),
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+);
+register_post_type( 'referens', $args );
+}
+add_action( 'init', 'ref_custom_init' );
