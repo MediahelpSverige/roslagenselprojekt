@@ -23,7 +23,7 @@ define('DB_USER', '180958_yy65128');
 define('DB_PASSWORD', 'steel1992');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'roslagens-180958.mysql.binero.se');
 
 /** Database Charset to use in creating database tables. */
 if (!defined('DB_CHARSET')) {
