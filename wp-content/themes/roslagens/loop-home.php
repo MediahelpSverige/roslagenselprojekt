@@ -13,14 +13,11 @@
 						</div>
 						<!--<img class="animated" src="<?php bloginfo('url')?>/wp-content/uploads/2016/05/Fr-Canon-007.png">-->
 					</div>
-
-					<div class="swiper-slide">
-						<div class="swiper-text animated"><h1 class="slider-title animated">Ring RoslagsJouren</h1>
-							<p>
-								- när du har akuta elproblem mellan kl 16:00 och 07:00
-							</p>
+				<div class="swiper-slide">
+						<div class="swiper-text animated">
+							<h1 class="slider-title">Vi utför elinstallationer och service åt såväl företag som privatpersoner.</h1>
 						</div>
-						<!--<img class="animated" src="<?php bloginfo('url')?>/wp-content/uploads/2016/05/Fr-Canon-004.png">-->
+						<!--<img class="animated" src="<?php bloginfo('url')?>/wp-content/uploads/2016/05/Fr-Canon-007.png">-->
 					</div>
 				</div>
 				<!-- If we need pagination -->

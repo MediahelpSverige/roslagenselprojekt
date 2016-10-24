@@ -120,3 +120,49 @@ $args = array(
 register_post_type( 'referens', $args );
 }
 add_action( 'init', 'ref_custom_init' );
+
+
+function worker_custom_init() {
+$args = array(
+'public' => true,
+'label'  => 'Medarbetare',
+'description'        => __( 'Description.', 'landqvist' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'worker' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+				'taxonomies'		 => array('category'),
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+);
+register_post_type( 'work', $args );
+}
+add_action( 'init', 'worker_custom_init' );
+
+
+function bildspel_custom_init() {
+$args = array(
+'public' => true,
+'label'  => 'Bildspel',
+'description'        => __( 'Description.', 'landqvist' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'bildspel' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+				'taxonomies'		 => array('category'),
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+);
+register_post_type( 'bildspel', $args );
+}
+add_action( 'init', 'bildspel_custom_init' );

@@ -3,6 +3,9 @@
 <div class="container">
 
 <div class="row">
+<div class="col-md-12">
+	<div class="map"><?php the_field('karta');?></div>
+</div>
 <div class="col-md-6 col-sm-6">
 			<?php 
 			if ( have_posts() ) {
@@ -22,5 +25,6 @@
 		<?php the_field('kontaktformular');?>
 	</div>
 </div>
+
 </div>
 </article>
