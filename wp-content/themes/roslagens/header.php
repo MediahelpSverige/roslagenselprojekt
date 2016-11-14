@@ -12,7 +12,7 @@
 		<link rel="author" href="<?php bloginfo('templare_url');?>/js/vendor/swiper/dist/swiper.css">
 		<?php wp_head() ?>
 		<script src="https://use.typekit.net/qvv2adn.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script>try{Typekit.load({ async: false });}catch(e){}</script>
     </head>
     <body <?php body_class() ?>>
 		<header id="page-header">
@@ -20,7 +20,7 @@
 			<h1 id="page-logo">
 				<?php if (!is_front_page()): ?>
 					<a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?> - <?php bloginfo('description') ?>">
-						
+
 						<img src="<?php bloginfo('url') ?>/wp-content/uploads/2016/05/elprojekt.png" alt="<?php bloginfo('name') ?>">
 					</a>
 				<?php else: ?>
@@ -40,7 +40,7 @@
 			</div>
 			</div>
 
-			
+
 			<div class="clearfix"></div>
 			</div>
 		</header>
