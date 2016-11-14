@@ -1,34 +1,32 @@
 <article id="page-<?php the_ID() ?>">
-	<?php the_content(); ?>
-	<div id="homebanner" style="background-image:url('<?php bloginfo('url')?>/wp-content/uploads/2016/05/background1.jpg')" class="swiper");">
-		<div class="container">
-			<div class="swiper-container">
-				<div class="parallax-bg"  data-swiper-parallax="-23%"></div>
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide">
-						<div class="swiper-text animated">
-							<h1 class="slider-title">Vi utför elinstallationer och service åt såväl företag som privatpersoner.</h1>
-						</div>
-						<!--<img class="animated" src="<?php bloginfo('url')?>/wp-content/uploads/2016/05/Fr-Canon-007.png">-->
-					</div>
-				<div class="swiper-slide">
-						<div class="swiper-text animated">
-							<h1 class="slider-title">Vi utför elinstallationer och service åt såväl företag som privatpersoner.</h1>
-						</div>
-						<!--<img class="animated" src="<?php bloginfo('url')?>/wp-content/uploads/2016/05/Fr-Canon-007.png">-->
-					</div>
-				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-				
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			</div>
-		</div>
+
+	<?php
+
+	$args = array( 'post_type' => 'bildspel', 'posts_per_page' => -1);
+	$query = new WP_Query($args);
+
+	?>
+	<?php if($query->have_posts()){ ?>
+
+		<div class="swiper-container" >
+			<div class="swiper-wrapper">
+<?php
+		while($query->have_posts()){
+			$query->the_post(); ?>
+				<div id="homebanner" class="swiper-slide" style="background-image:linear-gradient(rgba(43, 43, 43, 0.2), rgba(105, 0, 0, 0.2)),  url('<?php the_post_thumbnail_url(); ?>')">
+					<div class="container">
+		<span class="slider-title"><?php 	the_title(); ?></span>
 	</div>
+	</div>
+
+	<?php	}
+		wp_reset_postdata(); ?>
+</div>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+<?php	}?>
 	<div class="container page-content">
 		<div class="row">
 			<div class="col-md-12">
@@ -37,16 +35,10 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-sm-8 ">
-				
+
 				<div class="border-wrap">
 					<div class="article-section text">
-						<p>Anlita oss till enstaka installationer - eller för en totalentreprenad.
-						Vi utgår från dina idéer och önskemål och presenterar olika lösningar.</p>
-						<p>Självklart har vi Elbehörighet!</p>
-						<p>Tveka inte att kontakta oss om om du vill ha prisuppgifter
-							eller om du är intresserad av en offert.
-						Tänk på att du kan ha rätt till ROT-avdrag när det gäller elarbeten!</p>
-						<p>Välkommen att ringa: 0176-22 90 01</p>
+							<?php the_content(); ?>
 					</div>
 				</div>
 			</div>
@@ -56,8 +48,8 @@
 					<div class="border-wrap">
 						<div class="news-item">
 							<h4 class="news-title">Vi har en ny partner</h4>
-							<!--<img src="http://localhost:8080/Porkka/wp-content/uploads/2016/05/katalogbild.jpg">-->
-							<p>Cras ipsum nibh, eleifend non varius eget, porta in nulla. Etiam nisi libero, tempor et ultrices vel, sagittis vitae est. Sed mollis diam id tincidunt vestibulum</p>
+							<?php the_field('aktuellt'); ?>
+
 						</div>
 					</div>
 				</div>
@@ -66,5 +58,5 @@
 	</div>
 </article>
 <script type="text/javascript">
-	
+
 </script>

@@ -87,12 +87,13 @@ body {
 }
 
 #page-container #homebanner {
-  height: 750px;
-  padding: 200px 0px;
+  height: 500px;
+  padding: 100px 0px;
   background-size: cover;
   background-position: 70% 50%;
   position: relative;
   overflow: hidden;
+  margin-top: 50px;
 }
 #page-container #homebanner p {
   color: white;
@@ -102,7 +103,7 @@ body {
 }
 #page-container #homebanner .slider-title {
   font-weight: 900;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 75px;
   color: white;
   margin-top: 50px;
@@ -262,8 +263,12 @@ body {
   margin-bottom: 20px;
 }
 
+.banner .map iframe {
+  width: 100%;
+}
+
 .single-page-wrap {
-  padding: 120px 0px;
+  padding: 65px 0px;
 }
 .single-page-wrap .sortiment-item img {
   max-width: 100%;
@@ -277,48 +282,58 @@ body {
   font-size: 25px;
 }
 
+#fullpage-wrap #gallery-1 .gallery-item {
+  /* float: left; */
+  margin-top: 10px;
+  text-align: center;
+  /* width: 33%; */
+  width: 100%;
+  margin: 30px auto;
+}
+#fullpage-wrap #gallery-1 .gallery-item .gallery-caption {
+  margin-top: 10px;
+}
+#fullpage-wrap #gallery-1 .gallery-item a {
+  display: block;
+  margin: auto;
+}
+#fullpage-wrap #gallery-1 .gallery-item img {
+  display: block;
+  max-height: 600px;
+  width: auto;
+  margin: auto;
+  border: none;
+}
+
+.medarbetare {
+  height: 650px;
+}
+.medarbetare h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.medarbetare h4 {
+  font-size: 1.1em;
+}
+.medarbetare p {
+  font-size: 14px;
+}
+.medarbetare .medarbetare-img {
+  width: 250px;
+  border-radius: 50%;
+  border: 3px solid #c7c2be;
+  height: 250px;
+  margin: auto;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
 #page-footer {
   width: 100%;
   margin-top: 40px;
   background-color: #524A42;
   color: white;
-}
-
-.map{
-  width: 100%;
-
-}
-
-.map iframe{
-  width: 100%;
-}
-
-.medarbetare{
-  height: 650px;
-}
-
-.medarbetare-img{
-width: 250px;
-    border-radius: 50%;
-    border: 3px solid #c7c2be;
-    height: 250px;
-    margin: auto;
-    background-size: cover;
-    background-position: center center;
-    margin-bottom: 30px;
-}
-
-.medarbetare h3{
-  text-align: center;
-  font-weight:bold;
-}
-
-.medarbetare h4{
-  font-size: 1.1em;
-}
-
-.medarbetare p{
-  font-size: 14px;
 }
 
 /*# sourceMappingURL=custom.css.map */
